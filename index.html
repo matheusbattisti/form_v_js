@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário com Validação JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <h1>Form com validação JavaScript</h1>
+    <form id="form">
+      <progress id="progress" value="0" max="100"></progress>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" />
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" />
+
+      <label for="job">Situação de trabalho:</label>
+      <select name="job" id="job">
+        <option value="">Está buscando emprego?</option>
+        <option value="yes">Sim</option>
+        <option value="no">Não</option>
+      </select>
+
+      <label for="message">Mensagem:</label>
+      <textarea name="message" id="message"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <!-- Modal -->
+    <div id="modal">
+      <div class="modal-content">
+        <span id="close-button">&times;</span>
+        <p class="modal-message"></p>
+      </div>
+    </div>
+  </body>
+</html>
